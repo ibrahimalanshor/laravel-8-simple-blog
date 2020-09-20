@@ -1,0 +1,47 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.topbar{
+	position: absolute; 
+	width: 100%; 
+	height: 70px; 
+	top: 0; 
+	left: 0;
+	a.icon{
+		font-size: $font-icon-sidebar;
+	}
+	.logo{
+		width: 85px;
+	}
+}
+
+.wrapper{
+	margin-top: 70px;
+}
+
+.sidebar {
+	width: 85px;
+	li{
+		font-size: $font-icon-sidebar;
+	}
+	a{
+		display: block;
+		color: #fff;
+		&:hover, &.active{
+			background-color: $blue;
+		}
+	}
+}
+
+.post{
+	font-size: 1rem;
+	p, img, ul, h2{
+		margin-bottom: 1.5rem
+	}
+}

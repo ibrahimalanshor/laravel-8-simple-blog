@@ -22,7 +22,7 @@
         		</div>
         		<div class="form-group">
         			<label>Content</label>
-  					<textarea name="content" class="form-control @error('content') is-invalid @enderror" placeholder="Content" required>{{ isset($file) ? '<img src="{{ img($file) }}>' : old('content') }}</textarea>
+  					<textarea name="content" class="form-control @error('content') is-invalid @enderror" placeholder="Content" required>{{ isset($file) ? '<img src="img($file)">' : old('content') }}</textarea>
 
         			@error('content')
         				<span class="invalid-feedback">{{ $message }}</span>

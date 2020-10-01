@@ -5,7 +5,11 @@ Laravel Simple Blog dibuat dengan Laravel 8 dan Bootstrap.
 ### Instalation
 
 * Clone repo ini
-* Composer install/update
-* NPM install && NPM run dev
-* PHP artisan serve
+* Salin `env.example` ke `env`. Sesuaikan konfigurasi database anda.
+* composer install/update
+* npm install && npm run dev
+* php artisan key:Generate
+* php artisan storage:link
+* php artisan migrate --seed
+* php artisan serve
 * Enjoy
